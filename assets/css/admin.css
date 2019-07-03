@@ -1,0 +1,16 @@
+.ariana-media-control .img-preview{
+  display: block;
+  margin: 5px 0;
+  clear: both;
+}
+.ariana-media-control .img-preview img {
+    max-width: 100%;
+}
+.ariana-media-control .img-preview a{
+  display: inline-block;
+  line-height: 1;
+}
+/* iconpicker */
+.fip-grey.icons-selector .selector-footer,
+.fip-grey.icons-selector .selector-footer i{color:#888!important;font-weight:bold}
+.fip-grey.icons-selector .selector-arrows i:hover{color:#555!important}

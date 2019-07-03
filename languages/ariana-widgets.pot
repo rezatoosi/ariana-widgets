@@ -1,0 +1,483 @@
+# Copyright (C) 2019 Ariana Digital Agency
+# This file is distributed under the same license as the Ariana widgets plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ariana widgets 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ariana-widgets\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-06-04T15:49:44+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.2.0\n"
+"X-Domain: ariana-widgets\n"
+
+#. Plugin Name of the plugin
+msgid "Ariana widgets"
+msgstr ""
+
+#. Description of the plugin
+msgid "Necessary widgets for ariana themes"
+msgstr ""
+
+#. Author of the plugin
+msgid "Ariana Digital Agency"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://keihanserver.com/"
+msgstr ""
+
+#: ariana-widgets.php:52
+msgid "\"Ariana Widgets\" Plugin is useless if you don't use one of the ariana themes."
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:11
+msgid "Projects"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:12
+msgid "Project"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:13
+#: posttypes/ariana-posttype-projects.php:14
+msgid "Add New Project"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:15
+msgid "Edit Project"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:16
+msgid "New Project"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:17
+msgid "View Project"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:18
+msgid "View Portfolio"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:19
+msgid "Search Projects"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:20
+msgid "No Project Found"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:21
+msgid "No projects found in trash"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:23
+msgid "All Projects"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:34
+msgid "dashicons-portfolio"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:41
+msgid "Portfolios"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:42
+msgid "Portfolio"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:43
+msgid "Search Portfolios"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:44
+msgid "Popular Portfolios"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:45
+msgid "All Portfolios"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:48
+msgid "Edit Portfolio"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:49
+msgid "Update Portfolio"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:50
+msgid "Add New Portfolio"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:51
+msgid "New Portfolio Name"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:52
+msgid "Separate portfolios with commas"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:53
+msgid "Add or remove portfolio"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:54
+msgid "Choose from the most used portfolios"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:55
+msgid "No portfolios found."
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:66
+msgid "Project Type Tags"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:67
+msgid "Project Type Tag"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:68
+msgid "Search Type Tags"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:69
+msgid "Popular Type Tags"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:70
+msgid "All Type Tags"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:73
+msgid "Edit Type Tag"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:74
+msgid "Update Type Tag"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:75
+msgid "Add New Type Tag"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:76
+msgid "New type tag Name"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:77
+msgid "Separate type tags with commas"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:78
+msgid "Add or remove type tags"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:79
+msgid "Choose from the most used type tags"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:80
+msgid "No type tags found."
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:91
+msgid "Technologies"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:92
+msgid "Technology"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:93
+msgid "Search Technologies"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:94
+msgid "Popular Technologies"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:95
+msgid "All Technologies"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:98
+msgid "Edit Technology"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:99
+msgid "Update Technology"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:100
+msgid "Add New Technology"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:101
+msgid "New Technology Name"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:102
+msgid "Separate technologies with commas"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:103
+msgid "Add or remove technologies"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:104
+msgid "Choose from the most used technologies"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:105
+msgid "No technologies found."
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:120
+msgid "Project Data"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:140
+msgid "Client"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:145
+msgid "Launch URL"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:150
+msgid "Publish Date"
+msgstr ""
+
+#: posttypes/ariana-posttype-projects.php:155
+msgid "Description"
+msgstr ""
+
+#. translators: text in front of Discription field label in admin
+#: posttypes/ariana-posttype-projects.php:155
+msgid "Single Page sub title"
+msgstr ""
+
+#: posttypes/ariana-posttype-services.php:8
+msgid "Services"
+msgstr ""
+
+#: posttypes/ariana-posttype-services.php:9
+msgid "Service"
+msgstr ""
+
+#: posttypes/ariana-posttype-services.php:15
+msgid "dashicons-awards"
+msgstr ""
+
+#: posttypes/ariana-posttype-testimonials.php:9
+msgid "Testimonials"
+msgstr ""
+
+#: posttypes/ariana-posttype-testimonials.php:10
+msgid "Testimonial"
+msgstr ""
+
+#: posttypes/ariana-posttype-testimonials.php:16
+msgid "dashicons-testimonial"
+msgstr ""
+
+#: posttypes/ariana-posttype-testimonials.php:23
+msgid "Additional Data"
+msgstr ""
+
+#: posttypes/ariana-posttype-testimonials.php:35
+msgid "This URL isn't valid"
+msgstr ""
+
+#: widgets/ariana-widget-archive.php:39
+msgid "Select Year"
+msgstr ""
+
+#: widgets/ariana-widget-archive.php:42
+msgid "Select Month"
+msgstr ""
+
+#: widgets/ariana-widget-archive.php:45
+msgid "Select Day"
+msgstr ""
+
+#: widgets/ariana-widget-archive.php:48
+msgid "Select Week"
+msgstr ""
+
+#: widgets/ariana-widget-archive.php:51
+msgid "Select Post"
+msgstr ""
+
+#: widgets/ariana-widget-category.php:13
+msgid "A list or dropdown of categories."
+msgstr ""
+
+#: widgets/ariana-widget-category.php:16
+msgid "Ariana - Categories"
+msgstr ""
+
+#: widgets/ariana-widget-category.php:22
+msgid "Categories"
+msgstr ""
+
+#: widgets/ariana-widget-category.php:52
+msgid "Select Category"
+msgstr ""
+
+#. translators: Title of menu
+#: widgets/ariana-widget-category.php:111
+#: widgets/ariana-widget-feature.php:188
+#: widgets/ariana-widget-nav-menu.php:108
+#: widgets/ariana-widget-recent-post.php:99
+#: widgets/ariana-widget-text.php:84
+msgid "Title:"
+msgstr ""
+
+#: widgets/ariana-widget-category.php:114
+#: widgets/ariana-widget-nav-menu.php:112
+#: widgets/ariana-widget-recent-post.php:102
+msgid "Container Class:"
+msgstr ""
+
+#: widgets/ariana-widget-category.php:118
+msgid "Display as dropdown"
+msgstr ""
+
+#: widgets/ariana-widget-category.php:121
+msgid "Show post counts"
+msgstr ""
+
+#: widgets/ariana-widget-category.php:124
+msgid "Show hierarchy"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:20
+msgid "Ariana - Feature"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:21
+msgid "Add this widget in \"Front page - Features\"."
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:193
+msgid "Text:"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:198
+msgid "Image"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:208
+msgid "Choose Image"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:209
+msgid "Remove Image"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:213
+msgid "Image:"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:217
+msgid "Upload Image"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:221
+msgid "Icon:"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:223
+msgid "All Font Awesome Icons"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:232
+msgid "Color:"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:237
+msgid "Container CSS Class:"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:242
+msgid "Icon Container CSS Class:"
+msgstr ""
+
+#: widgets/ariana-widget-feature.php:247
+msgid "Content Container CSS Class:"
+msgstr ""
+
+#: widgets/ariana-widget-nav-menu.php:14
+msgid "Add a nav menu to your sidebar."
+msgstr ""
+
+#: widgets/ariana-widget-nav-menu.php:17
+msgid "Ariana - Navigation Menu"
+msgstr ""
+
+#. translators: %s: url to create a new menu
+#: widgets/ariana-widget-nav-menu.php:103
+msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
+msgstr ""
+
+#: widgets/ariana-widget-nav-menu.php:116
+#: widgets/ariana-widget-recent-post.php:105
+msgid "UL Class:"
+msgstr ""
+
+#. translators: List of existing menus
+#: widgets/ariana-widget-nav-menu.php:120
+msgid "Select Menu:"
+msgstr ""
+
+#: widgets/ariana-widget-nav-menu.php:122
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: widgets/ariana-widget-nav-menu.php:132
+msgid "Edit Menu"
+msgstr ""
+
+#: widgets/ariana-widget-recent-post.php:10
+msgid "Your site&#8217;s most recent Posts."
+msgstr ""
+
+#: widgets/ariana-widget-recent-post.php:13
+msgid "Ariana - Recent Posts"
+msgstr ""
+
+#: widgets/ariana-widget-recent-post.php:56
+msgid "(no title)"
+msgstr ""
+
+#: widgets/ariana-widget-recent-post.php:108
+msgid "Number of posts to show:"
+msgstr ""
+
+#: widgets/ariana-widget-recent-post.php:112
+msgid "Display post date?"
+msgstr ""
+
+#: widgets/ariana-widget-tag-cloud.php:17
+msgid "Tags"
+msgstr ""
+
+#: widgets/ariana-widget-text.php:15
+msgid "Arbitrary text."
+msgstr ""
+
+#: widgets/ariana-widget-text.php:22
+msgid "Ariana - Text"
+msgstr ""
+
+#: widgets/ariana-widget-text.php:88
+msgid "Content:"
+msgstr ""
