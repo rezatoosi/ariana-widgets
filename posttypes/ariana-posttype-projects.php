@@ -159,7 +159,7 @@ function projects_render_meta_box( $post_id, $post ) {
   <?php
 }
 
-function save_metabox( $post_id ) {
+function ariana_save_projects_metabox( $post_id ) {
     // Add nonce for security and authentication.
     $nonce_name   = isset( $_POST['_ariana_projects_metabox_nonce'] ) ? $_POST['_ariana_projects_metabox_nonce'] : '';
     $nonce_action = 'ariana_projects_metabox_nonce';
@@ -226,7 +226,7 @@ function save_metabox( $post_id ) {
     }
 
 }
-add_action( 'save_post', 'save_metabox' );
+add_action( 'save_post', 'ariana_save_projects_metabox' );
 
 // add_action( 'do_meta_boxes', 'ariana_projects_remove_default_custom_fields', 1, 3 );
 // function ariana_projects_remove_default_custom_fields( $post_type, $context, $post ) {

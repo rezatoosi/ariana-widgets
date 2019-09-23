@@ -9,7 +9,7 @@ function ariana_services_create_post_type() {
 				'singular_name' => __( 'Service', 'ariana-widgets' )
 			),
 			'public' => true,/*Post type is intended for public use. This includes on the front end and in wp-admin. */
-			'supports' => array('title','editor','thumbnail','custom-fields', 'excerpt', 'page-attributes'),
+			'supports' => array('title','editor','thumbnail', 'excerpt', 'page-attributes'),
 			'hierarchical' => False,
       'rewrite' => array( 'slug' => 'services'),
 			'menu_icon' => __( 'dashicons-awards', 'ariana-widgets' )
@@ -17,6 +17,93 @@ function ariana_services_create_post_type() {
 	);
 }
 add_action( 'init', 'ariana_services_create_post_type' );
+
+function ariana_services_add_meta_box() {
+
+  add_meta_box(
+    'services-additional-meta-box2',
+    esc_html__( 'Services Data', 'ariana-widgets' ),
+    'services_render_meta_box',
+    'ariana-services',
+    'normal',
+    'high' );
+}
+add_action( 'add_meta_boxes_ariana-services', 'ariana_services_add_meta_box' );
+
+function services_render_meta_box( $post_id, $post ) {
+  $fields = get_post_custom( $post->ID );
+  $post_sec_title = isset( $fields['post_sec_title'] ) ? esc_attr( $fields['post_sec_title'][0] ) : '';
+  $post_desc = isset( $fields['post_desc'] ) ? esc_attr( $fields['post_desc'][0] ) : '';
+
+  ?>
+  <fieldset>
+    <?php wp_nonce_field( 'ariana_services_metabox_nonce', '_ariana_services_metabox_nonce'); ?>
+
+    <p class="post-attributes-label-wrapper">
+  		<label class="post-attributes-label" for="post-sec-title"><?php _e( 'Second title', 'ariana-widgets' ); ?></label>
+  	</p>
+    <input id="post-sec-title" name="post-sec-title" class="widefat" value="<?php echo $post_sec_title; ?>" />
+
+    <p class="post-attributes-label-wrapper">
+  		<label class="post-attributes-label" for="post-desc"><?php _e( 'Description', 'ariana-widgets' ); ?></label> <small><?php /* translators: text in front of Discription field label in admin */ _e( 'Single Page sub title', 'ariana-widgets' ); ?></small>
+  	</p>
+    <textarea id="post-desc" name="post-desc" rows="1" cols="40" class="widefat"><?php echo $post_desc; ?></textarea>
+  </fieldset>
+  <?php
+}
+
+function ariana_save_services_metabox( $post_id ) {
+    // Add nonce for security and authentication.
+    $nonce_name   = isset( $_POST['_ariana_services_metabox_nonce'] ) ? $_POST['_ariana_services_metabox_nonce'] : '';
+    $nonce_action = 'ariana_services_metabox_nonce';
+
+    // Check if nonce is valid.
+    if ( ! wp_verify_nonce( $nonce_name, $nonce_action ) ) {
+        return;
+    }
+
+    // Check if user has permissions to save data.
+    if ( ! current_user_can( 'edit_post', $post_id ) ) {
+        return;
+    }
+
+    // Check if not an autosave.
+    if ( wp_is_post_autosave( $post_id ) ) {
+        return;
+    }
+
+    // Check if not a revision.
+    if ( wp_is_post_revision( $post_id ) ) {
+        return;
+    }
+
+    $allowed_tags = array(
+        'a' => array(
+            'href' => array(),
+            'title' => array(),
+            'id' => array()
+        )
+    );
+
+
+    if ( isset( $_POST['post-sec-title'] ) ){
+      update_post_meta(
+        $post_id,
+        'post_sec_title',
+        wp_kses( $_POST['post-sec-title'], $allowed_tags )
+      );
+    }
+
+    if ( isset( $_POST['post-desc'] ) ){
+      update_post_meta(
+        $post_id,
+        'post_desc',
+        wp_kses_post( $_POST['post-desc'] )
+      );
+    }
+
+}
+add_action( 'save_post', 'ariana_save_services_metabox' );
 
 //registering the shortcode to show testimonials
 function ariana_services_get_html($data){
