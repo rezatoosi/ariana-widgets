@@ -33,6 +33,7 @@ add_action( 'add_meta_boxes_ariana-services', 'ariana_services_add_meta_box' );
 function services_render_meta_box( $post_id, $post ) {
   $fields = get_post_custom( $post->ID );
   $post_sec_title = isset( $fields['post_sec_title'] ) ? esc_attr( $fields['post_sec_title'][0] ) : '';
+	$post_home_subtitle = isset( $fields['post_home_subtitle'] ) ? esc_attr( $fields['post_home_subtitle'][0] ) : '';
   $post_desc = isset( $fields['post_desc'] ) ? esc_attr( $fields['post_desc'][0] ) : '';
 
   ?>
@@ -40,9 +41,14 @@ function services_render_meta_box( $post_id, $post ) {
     <?php wp_nonce_field( 'ariana_services_metabox_nonce', '_ariana_services_metabox_nonce'); ?>
 
     <p class="post-attributes-label-wrapper">
-  		<label class="post-attributes-label" for="post-sec-title"><?php _e( 'Second title', 'ariana-widgets' ); ?></label>
+  		<label class="post-attributes-label" for="post-sec-title"><?php _e( 'Second title', 'ariana-widgets' ); ?></label>  <small><?php /* translators: text in front of second title field label in admin */ _e( 'Single Page second title', 'ariana-widgets' ); ?></small>
   	</p>
     <input id="post-sec-title" name="post-sec-title" class="widefat" value="<?php echo $post_sec_title; ?>" />
+
+		<p class="post-attributes-label-wrapper">
+  		<label class="post-attributes-label" for="post-home-subtitle"><?php _e( 'Homepage Subtitle', 'ariana-widgets' ); ?></label>  <small><?php /* translators: text in front of Homepage subtitle field label in admin */ _e( 'Home Page subtitle', 'ariana-widgets' ); ?></small>
+  	</p>
+    <input id="post-home-subtitle" name="post-home-subtitle" class="widefat" value="<?php echo $post_home_subtitle; ?>" />
 
     <p class="post-attributes-label-wrapper">
   		<label class="post-attributes-label" for="post-desc"><?php _e( 'Description', 'ariana-widgets' ); ?></label> <small><?php /* translators: text in front of Discription field label in admin */ _e( 'Single Page sub title', 'ariana-widgets' ); ?></small>
@@ -91,6 +97,14 @@ function ariana_save_services_metabox( $post_id ) {
         $post_id,
         'post_sec_title',
         wp_kses( $_POST['post-sec-title'], $allowed_tags )
+      );
+    }
+
+		if ( isset( $_POST['post-home-subtitle'] ) ){
+      update_post_meta(
+        $post_id,
+        'post_home_subtitle',
+        wp_kses( $_POST['post-home-subtitle'], $allowed_tags )
       );
     }
 
@@ -149,7 +163,22 @@ function ariana_services_get_html($data){
         // echo      '<p>Starting from $50.00</p>';
         echo    '</div><!-- end item-desc -->';
         echo '</div><!-- end item -->';
-      else:
+      elseif ( $theme_mode == 'homebox' ):
+				$post_home_subtitle = get_post_meta( $post->ID, 'post_home_subtitle', true );
+				echo '<div class="col-md-4 col-sm-12">';
+				echo 		'<div class="item mb-30">';
+        echo    	'<div class="item-image">';
+				echo 				'<a href="' . get_the_permalink($post->ID) . '" title="' . $post->post_title . '">';
+        echo      		$img_markup;
+				echo 				'</a>';
+        echo    	'</div><!-- end item-image -->';
+        echo    	'<div class="item-desc">';
+        echo      	'<h4><a href="' . get_the_permalink($post->ID) . '" title="' . $post->post_title . '">' . $post->post_title . '</a></h4>';
+        echo      	( $post_home_subtitle != '' ) ? '<p>' . $post_home_subtitle . '</p>' : '';
+        echo    	'</div><!-- end item-desc -->';
+        echo 		'</div><!-- end item -->';
+				echo '</div><!-- end col -->';
+			else:
         echo '<div class="col-md-4 col-sm-12">';
         echo    '<div class="item">';
         echo        '<div class="item-image">';
