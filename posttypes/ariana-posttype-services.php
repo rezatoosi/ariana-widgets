@@ -27,10 +27,11 @@ function ariana_services_add_meta_box() {
     'ariana-services',
     'normal',
     'high' );
+
 }
 add_action( 'add_meta_boxes_ariana-services', 'ariana_services_add_meta_box' );
 
-function services_render_meta_box( $post_id, $post ) {
+function services_render_meta_box( $post ) {
   $fields = get_post_custom( $post->ID );
   $post_sec_title = isset( $fields['post_sec_title'] ) ? esc_attr( $fields['post_sec_title'][0] ) : '';
 	$post_home_subtitle = isset( $fields['post_home_subtitle'] ) ? esc_attr( $fields['post_home_subtitle'][0] ) : '';
@@ -165,7 +166,7 @@ function ariana_services_get_html($data){
         echo '</div><!-- end item -->';
       elseif ( $theme_mode == 'homebox' ):
 				$post_home_subtitle = get_post_meta( $post->ID, 'post_home_subtitle', true );
-				echo '<div class="col-md-4 col-sm-12">';
+				echo '<div class="col-md-3 col-sm-12">';
 				echo 		'<div class="item mb-30">';
         echo    	'<div class="item-image">';
 				echo 				'<a href="' . get_the_permalink($post->ID) . '" title="' . $post->post_title . '">';
