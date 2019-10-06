@@ -47,7 +47,7 @@ function ariana_header_image_metabox( $post ) {
   		<label class="post-attributes-label" for="upload_image_button"><?php _e( 'Header Image', 'ariana-widgets' ); ?></label>
 			<small>
         <?php /* translators:  this is header image in services admin page */
-        _e( 'Upload your header image for services single page', 'ariana-widgets' ); ?>
+        // _e( 'Upload your header image for services single page', 'ariana-widgets' ); ?>
       </small>
   	</p>
 

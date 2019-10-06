@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ariana widgets 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ariana-widgets\n"
-"POT-Creation-Date: 2019-06-04 20:20+0430\n"
-"PO-Revision-Date: 2019-06-04 20:21+0430\n"
+"POT-Creation-Date: 2019-10-06 23:18+0330\n"
+"PO-Revision-Date: 2019-10-06 23:22+0330\n"
 "Last-Translator: \n"
 "Language-Team: Ariana Digital Agency\n"
 "Language: fa_IR\n"
@@ -32,13 +32,51 @@ msgstr "فناوری اطلاعات آریانا"
 msgid "http://keihanserver.com/"
 msgstr "http://keihanserver.com"
 
-#: ariana-widgets.php:52
+#: ariana-widgets.php:58
 msgid ""
 "\"Ariana Widgets\" Plugin is useless if you don't use one of the ariana "
 "themes."
 msgstr ""
 "اگر یکی از پوسته های آریانا را استفاده نمی‌کنید، افزونه \"ابزارها - آریانا\" "
 "برای شما بدون استفاده است. پیشنهاد می‌کنم آنرا غیر فعال کنید."
+
+#: header-image/ariana-header-image-admin.php:13
+#: header-image/ariana-header-image.php:12
+#: header-image/ariana-header-image.php:47
+#: header-image/class-ariana-header-image.php:32
+msgid "Header Image"
+msgstr "تصویر هدر"
+
+#. translators:  select header image metabox in admin
+#: header-image/ariana-header-image-admin.php:16
+msgid "Upload your header image"
+msgstr "تصویر مورد نظر برای هدر را بارگزاری کنید"
+
+#: header-image/ariana-header-image-admin.php:21
+msgid "Set Header Image"
+msgstr "انتخاب تصویر هدر"
+
+#: header-image/ariana-header-image-admin.php:29
+#: widgets/ariana-widget-feature.php:209
+msgid "Remove Image"
+msgstr "حذف تصویر"
+
+#: header-image/ariana-header-image-admin.php:29
+msgid "Remove"
+msgstr "حذف"
+
+#: header-image/ariana-header-image-admin.php:30
+msgid "Edit Image"
+msgstr "ویرایش تصویر"
+
+#: header-image/ariana-header-image-admin.php:30
+msgid "Edit"
+msgstr "ویرایش"
+
+#. translators:  this is header image in services admin page
+#: header-image/ariana-header-image.php:50
+msgid "Upload your header image for services single page"
+msgstr ""
 
 #: posttypes/ariana-posttype-projects.php:11
 msgid "Projects"
@@ -262,11 +300,13 @@ msgid "Publish Date"
 msgstr "تاریخ انتشار"
 
 #: posttypes/ariana-posttype-projects.php:155
+#: posttypes/ariana-posttype-services.php:55
 msgid "Description"
 msgstr "توضیحات"
 
 #. translators: text in front of Discription field label in admin
 #: posttypes/ariana-posttype-projects.php:155
+#: posttypes/ariana-posttype-services.php:55
 msgid "Single Page sub title"
 msgstr "زیر عنوان در صفحه نمایش پروژه تکی"
 
@@ -281,6 +321,28 @@ msgstr "خدمت"
 #: posttypes/ariana-posttype-services.php:15
 msgid "dashicons-awards"
 msgstr "dashicons-awards"
+
+#: posttypes/ariana-posttype-services.php:25
+msgid "Services Data"
+msgstr "اطلاعات خدمات"
+
+#: posttypes/ariana-posttype-services.php:45
+msgid "Second title"
+msgstr "عنوان دوم"
+
+#. translators: text in front of second title field label in admin
+#: posttypes/ariana-posttype-services.php:45
+msgid "Single Page second title"
+msgstr "عنوان دوم در صفحه نمایش تکی"
+
+#: posttypes/ariana-posttype-services.php:50
+msgid "Homepage Subtitle"
+msgstr "زیر‌عنوان در خانه"
+
+#. translators: text in front of Homepage subtitle field label in admin
+#: posttypes/ariana-posttype-services.php:50
+msgid "Home Page subtitle"
+msgstr "زیر عنوان در خانه"
 
 #: posttypes/ariana-posttype-testimonials.php:9
 msgid "Testimonials"
@@ -382,10 +444,6 @@ msgstr "تصویر"
 #: widgets/ariana-widget-feature.php:208
 msgid "Choose Image"
 msgstr "انتخاب تصویر"
-
-#: widgets/ariana-widget-feature.php:209
-msgid "Remove Image"
-msgstr "حذف تصویر"
 
 #: widgets/ariana-widget-feature.php:213
 msgid "Image:"
