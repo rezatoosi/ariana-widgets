@@ -33,7 +33,7 @@ class Ariana_Header_Image {
           array( $this, 'header_image_metabox' ),
           $screen,
           'side',
-          'high' );
+          'default' );
 
         }
 
