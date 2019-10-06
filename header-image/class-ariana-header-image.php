@@ -80,4 +80,6 @@ class Ariana_Header_Image {
     }
 }
 
+
+// https://code.tutsplus.com/series/getting-started-with-the-wordpress-media-uploader--cms-666
 ?>
