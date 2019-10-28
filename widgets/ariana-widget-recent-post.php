@@ -56,7 +56,7 @@ class Ariana_Widget_Recent_Posts extends WP_Widget {
   				$title      = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)', 'ariana-widgets' );
 
           // get_the_post_thumbnail_caption( $recent_post->ID )
-          $thumbnail_id = get_post_thumbnail_id( $post->ID );
+          $thumbnail_id = get_post_thumbnail_id( $recent_post->ID );
           $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
   				?>
   				<li>
