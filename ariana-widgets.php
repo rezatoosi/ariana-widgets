@@ -49,6 +49,9 @@ if ( 'Ariana Digital Agency' == $current_theme->get( 'Author' ) || ( $current_pa
 	}
 	run_ariana_header_image();
 
+	// tax-thumb
+	require_once plugin_dir_path( __FILE__ ) . 'tax-thumb/class-ariana-tax-thumb.php';
+
 } else {
 
 	add_action( 'admin_notices', 'ariana_widgets_admin_notice', 99 );
