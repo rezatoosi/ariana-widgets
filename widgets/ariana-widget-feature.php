@@ -3,13 +3,15 @@
 add_action( 'widgets_init', function(){ register_widget( 'Ariana_Widget_Feature' ); } );
 
 
-function ariana_get_attachment_image() {
-	$id  = intval( $_POST['attachment_id'] );
-	$src = wp_get_attachment_image_src( $id, 'full', false );
-	if ( ! empty( $src[0] ) ) {
-		echo esc_url( $src[0] );
-	}
-	die();
+if ( ! function_exists( 'ariana_get_attachment_image' ) ) {
+  function ariana_get_attachment_image() {
+    $id  = intval( $_POST['attachment_id'] );
+    $src = wp_get_attachment_image_src( $id, 'full', false );
+    if ( ! empty( $src[0] ) ) {
+      echo esc_url( $src[0] );
+    }
+    die();
+  }
 }
 add_action( 'wp_ajax_ariana_get_attachment_media', 'ariana_get_attachment_image' );
 
