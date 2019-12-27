@@ -121,6 +121,7 @@ class Ariana_Widget_Feature extends WP_Widget {
 		$instance = wp_parse_args( $instance, $this->default_array() );
 		$instance_id = $this->id;
 
+		$img_ico = '';
 		if ( !empty( $instance['image'] ) ){
 			$img_ico = wp_get_attachment_image_src( $instance['image'] , 'thumbnail', false );
 			if ( ! empty( $img_ico[0] ) ) {
