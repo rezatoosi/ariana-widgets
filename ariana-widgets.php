@@ -36,6 +36,7 @@ if ( 'Ariana Digital Agency' == $current_theme->get( 'Author' ) || ( $current_pa
   require_once plugin_dir_path( __FILE__ ) . 'widgets/ariana-widget-recent-post.php';
 	// require_once plugin_dir_path( __FILE__ ) . 'widgets/ariana-widget-tag-cloud.php';
   require_once plugin_dir_path( __FILE__ ) . 'widgets/ariana-widget-text.php';
+	require_once plugin_dir_path( __FILE__ ) . 'widgets/ariana-widget-box.php';
 
 	require_once plugin_dir_path( __FILE__ ) . 'posttypes/ariana-posttype-testimonials.php';
 	require_once plugin_dir_path( __FILE__ ) . 'posttypes/ariana-posttype-services.php';
