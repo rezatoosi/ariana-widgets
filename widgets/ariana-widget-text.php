@@ -86,7 +86,7 @@ class Ariana_Widget_Text extends WP_Widget {
 			</p>
 			<p class="ariana-editor-container">
 				<label for="<?php echo $this->get_field_id( 'text' ); ?>"><?php _e( 'Content:', 'ariana-widgets' ); ?></label>
-				<textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id( 'text' ); ?>" name="<?php echo $this->get_field_name( 'text' ); ?>"><?php echo esc_textarea( $instance['text'] ); ?></textarea>
+				<textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id( 'text' ); ?>" name="<?php echo $this->get_field_name( 'text' ); ?>"><?php echo $instance['text']; ?></textarea>
 			</p>
 		<?php
 	}
