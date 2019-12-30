@@ -11,7 +11,7 @@ arianaWidgets.textEditor = {
 
     wp.editor.initialize( editorId, {
       tinymce: {
-        wpautop: true,
+        wpautop: false,
         setup: function( editor ) {
           editor.on( 'change', function() {
             editor.save();
