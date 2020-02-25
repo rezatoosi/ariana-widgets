@@ -180,15 +180,16 @@ function ariana_services_get_html($data){
         echo 		'</div><!-- end item -->';
 				echo '</div><!-- end col -->';
 			else:
-        echo '<div class="col-md-4 col-sm-12">';
+				$post_home_subtitle = get_post_meta( $post->ID, 'post_home_subtitle', true );
+        echo '<div class="col-md-3 col-sm-6">';
         echo    '<div class="item">';
         echo        '<div class="item-image">';
         echo            $img_markup;
         echo            '<span class="item-icon"><a href="' . get_the_permalink( $post->ID ) . '"><i class="fa fa-link"></i></a></span>';
         echo        '</div><!-- end item-image -->';
-        echo        '<div class="item-desc">';
+        echo        '<div class="item-desc text-center">';
         echo            '<h4><a href="' . get_the_permalink( $post->ID ) . '" title="' . $post->post_title . '">' . $post->post_title . '</a></h4>';
-        // echo            '<h5>STARTING FROM $10.00</h5>';
+        echo            ( $post_home_subtitle != '' ) ? '<h5><a href="' . get_the_permalink( $post->ID ) . '" title="' . $post->post_title . '">' . $post_home_subtitle . '</a></h5>' : '';
         // echo            '<p>' . $post->post_excerpt . '</p>';
         echo        '</div><!-- end service-desc -->';
         echo    '</div><!-- end seo-item -->';
