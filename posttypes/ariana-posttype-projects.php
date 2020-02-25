@@ -28,6 +28,7 @@ function ariana_projects_create_post_type() {
 			'labels'         => $posttype_labels,
 			'public'         => true,/*Post type is intended for public use. This includes on the front end and in wp-admin. */
 			'supports'       => array('title','editor','thumbnail', 'excerpt', 'page-attributes'),
+      'show_in_rest'   => true,//added to use gutenberg instead of classic editor
 			'hierarchical'   => false,
       'has_archive'    => true,
       'rewrite'        => array( 'slug' => 'projects'),
@@ -126,7 +127,7 @@ function ariana_projects_add_meta_box() {
 add_action( 'add_meta_boxes_ariana-projects', 'ariana_projects_add_meta_box' );
 
 function projects_render_meta_box( $post_id, $post ) {
-  $fields = get_post_custom( $post->ID );
+  $fields = isset( $post->ID ) ? get_post_custom( $post->ID ) : '';
   $client = isset( $fields['project_client'] ) ? esc_attr( $fields['project_client'][0] ) : '';
   $url = isset( $fields['project_url'] ) ? esc_attr( $fields['project_url'][0] ) : '';
   $pub_date = isset( $fields['project_publish_date'] ) ? esc_attr( $fields['project_publish_date'][0] ) : '';

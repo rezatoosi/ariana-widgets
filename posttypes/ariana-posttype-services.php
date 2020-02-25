@@ -6,11 +6,24 @@ function ariana_services_create_post_type() {
 		array(
 			'labels' => array(
 				'name' => __( 'Services', 'ariana-widgets' ),
-				'singular_name' => __( 'Service', 'ariana-widgets' )
+				'singular_name' => __( 'Service', 'ariana-widgets' ),
+				'add_new' => __( 'Add New Service', 'ariana-widgets' ),
+				'add_new_item' => __( 'Add New Service', 'ariana-widgets' ),
+				'edit_item' => __( 'Edit Service', 'ariana-widgets' ),
+		    'new_item' => __( 'New Service', 'ariana-widgets' ),
+		    'view_item' => __( 'View Service', 'ariana-widgets' ),
+		    'view_items' => __( 'View Services', 'ariana-widgets' ),
+		    'search_items' => __( 'Search Services', 'ariana-widgets' ),
+		    'not_found' => __( 'No Service(s) Found', 'ariana-widgets' ),
+		    'not_found_in_trash' => __( 'No Service(s) found in trash', 'ariana-widgets' ),
+		    'parent_item_colon' => '',
+		    'all_items' => __( 'All Services', 'ariana-widgets' ),
 			),
 			'public' => true,/*Post type is intended for public use. This includes on the front end and in wp-admin. */
 			'supports' => array('title','editor','thumbnail', 'excerpt', 'page-attributes'),
+			'show_in_rest' => true, //added to use gutenberg instead of classic editor
 			'hierarchical' => False,
+			'has_archive'  => true,
       'rewrite' => array( 'slug' => 'services'),
 			'menu_icon' => __( 'dashicons-awards', 'ariana-widgets' )
 		)
@@ -32,7 +45,7 @@ function ariana_services_add_meta_box() {
 add_action( 'add_meta_boxes_ariana-services', 'ariana_services_add_meta_box' );
 
 function services_render_meta_box( $post ) {
-  $fields = get_post_custom( $post->ID );
+  $fields = isset( $post->ID ) ? get_post_custom( $post->ID ) : '';
   $post_sec_title = isset( $fields['post_sec_title'] ) ? esc_attr( $fields['post_sec_title'][0] ) : '';
 	$post_home_subtitle = isset( $fields['post_home_subtitle'] ) ? esc_attr( $fields['post_home_subtitle'][0] ) : '';
   $post_desc = isset( $fields['post_desc'] ) ? esc_attr( $fields['post_desc'][0] ) : '';
