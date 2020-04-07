@@ -60,6 +60,7 @@ function ariana_portfolio_create_taxonomis() {
     'labels'        => $portfolio_taxonomy_labels,
     'public'        => true,
     'hierarchical'  => true,
+    'show_in_rest'   => true,//show this tax in block editor
     'rewrite'       => array( 'slug' => 'portfolio' ),
   ) );
 
@@ -85,6 +86,7 @@ function ariana_portfolio_create_taxonomis() {
     'labels' => $project_types_taxonomy_labels,
     'public' => true,
     'hierarchical' => false,
+    'show_in_rest'   => true,//show this tax in block editor
     'rewrite' => array( 'slug' => 'types' ),
   ) );
 
@@ -110,6 +112,7 @@ function ariana_portfolio_create_taxonomis() {
     'labels' => $project_technology_taxonomy_labels,
     'public' => true,
     'hierarchical' => false,
+    'show_in_rest'   => true,//show this tax in block editor
     'rewrite' => array( 'slug' => 'technologies' ),
   ) );
 }

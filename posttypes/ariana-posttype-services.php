@@ -31,6 +31,35 @@ function ariana_services_create_post_type() {
 }
 add_action( 'init', 'ariana_services_create_post_type' );
 
+function ariana_services_create_tags_tax() {
+	$services_tags_taxonomy_labels = array(
+		'name'                       => __( 'Services Tags', 'ariana-widgets' ),
+		'singular_name'              => __( 'Service Tag', 'ariana-widgets' ),
+		'search_items'               => __( 'Search Tags', 'ariana-widgets' ),
+		'popular_items'              => __( 'Popular Tags', 'ariana-widgets' ),
+		'all_items'                  => __( 'All Tags', 'ariana-widgets' ),
+		// 'parent_item'                => null,
+		// 'parent_item_colon'          => null,
+		'edit_item'                  => __( 'Edit Tag', 'ariana-widgets' ),
+		'update_item'                => __( 'Update Tag', 'ariana-widgets' ),
+		'add_new_item'               => __( 'Add New Tag', 'ariana-widgets' ),
+		'new_item_name'              => __( 'New tag Name', 'ariana-widgets' ),
+		'separate_items_with_commas' => __( 'Separate tags with commas', 'ariana-widgets' ),
+		'add_or_remove_items'        => __( 'Add or remove tags', 'ariana-widgets' ),
+		'choose_from_most_used'      => __( 'Choose from the most used tags', 'ariana-widgets' ),
+		'not_found'                  => __( 'No tag found.', 'ariana-widgets' ),
+		// 'menu_name'                  => __( 'Type Tags', 'ariana-widgets' ),
+	);
+	register_taxonomy( 'ariana-services-tags', 'ariana-services', array(
+		'labels' => $services_tags_taxonomy_labels,
+		'public' => true,
+		'hierarchical' => false,
+		'show_in_rest'   => true,//show this tax in block editor
+		'rewrite' => array( 'slug' => 'services-tags' ),
+	) );
+}
+add_action( 'init', 'ariana_services_create_tags_tax' );
+
 function ariana_services_add_meta_box() {
 
   add_meta_box(
