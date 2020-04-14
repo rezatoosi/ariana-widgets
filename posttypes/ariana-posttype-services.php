@@ -22,7 +22,7 @@ function ariana_services_create_post_type() {
 			'public' => true,/*Post type is intended for public use. This includes on the front end and in wp-admin. */
 			'supports' => array('title','editor','thumbnail', 'excerpt', 'page-attributes'),
 			'show_in_rest' => true, //added to use gutenberg instead of classic editor
-			'hierarchical' => False,
+			'hierarchical' => true,
 			'has_archive'  => true,
       'rewrite' => array( 'slug' => 'services'),
 			'menu_icon' => __( 'dashicons-awards', 'ariana-widgets' )
