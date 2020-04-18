@@ -261,7 +261,7 @@ class Ariana_Widget_Box extends WP_Widget {
 
     <p>
 			<label for="<?php echo $this->get_field_id( 'btn_link' ); ?>"><?php _e( 'Button Link:', 'ariana-widgets' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'btn_link' ); ?>" name="<?php echo $this->get_field_name( 'btn_link' ); ?>" type="text" value="<?php echo esc_attr( $instance['btn_link'] ); ?>">
+			<input class="widefat" id="<?php echo $this->get_field_id( 'btn_link' ); ?>" name="<?php echo $this->get_field_name( 'btn_link' ); ?>" type="text" value="<?php echo esc_url( $instance['btn_link'] ); ?>">
 		</p>
 
     <p>
@@ -297,7 +297,8 @@ class Ariana_Widget_Box extends WP_Widget {
     $instance['icon_con_class']  = ( ! empty( $new_instance['icon_con_class'] ) ? sanitize_text_field( $new_instance['icon_con_class'] ) : '' );
     $instance['content_con_class']  = ( ! empty( $new_instance['content_con_class'] ) ? sanitize_text_field( $new_instance['content_con_class'] ) : '' );
     $instance['btn_text']  = ( ! empty( $new_instance['btn_text'] ) ? sanitize_text_field( $new_instance['btn_text'] ) : '' );
-    $instance['btn_link']  = ( ! empty( $new_instance['btn_link'] ) ? sanitize_text_field( $new_instance['btn_link'] ) : '' );
+    // $instance['btn_link']  = ( ! empty( $new_instance['btn_link'] ) ? sanitize_text_field( $new_instance['btn_link'] ) : '' );
+    $instance['btn_link']  = ( ! empty( $new_instance['btn_link'] ) ? $new_instance['btn_link'] : '' );
     $instance['btn_class']  = ( ! empty( $new_instance['btn_class'] ) ? sanitize_text_field( $new_instance['btn_class'] ) : '' );
 		return $instance;
 	}

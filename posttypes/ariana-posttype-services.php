@@ -24,6 +24,9 @@ function ariana_services_create_post_type() {
 			'show_in_rest' => true, //added to use gutenberg instead of classic editor
 			'hierarchical' => true,
 			'has_archive'  => true,
+			'show_ui' => true,
+			'show_in_menu' => true,
+    	'show_in_nav_menus' => true,
       'rewrite' => array( 'slug' => 'services'),
 			'menu_icon' => __( 'dashicons-awards', 'ariana-widgets' )
 		)
