@@ -165,7 +165,7 @@ function ariana_save_services_metabox( $post_id ) {
 }
 add_action( 'save_post', 'ariana_save_services_metabox' );
 
-//registering the shortcode to show testimonials
+//registering the shortcode to show services
 function ariana_services_get_html($data){
 	$args = array(
 		"post_type" => "ariana-services",
