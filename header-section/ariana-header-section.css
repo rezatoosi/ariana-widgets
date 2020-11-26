@@ -1,0 +1,27 @@
+.ariana-header-section .post-attributes-label-wrapper {
+  /* margin: 1.7em 0; */
+}
+.ariana-header-section .post-attributes-label {
+  display: inline-block;
+  margin-bottom: 0.2em;
+}
+.ariana-header-section .image-preview img {
+  max-height: 150px;
+}
+.ariana-header-section .btn-set-image,
+.ariana-header-section .btn-remove-image,
+.ariana-header-section .btn-change-image {
+  display: inline-block;
+  padding: 8px 10px;
+  background-color: #edeff0;
+  border: 1px dashed #a2aab2;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  line-height: 20px;
+}
+.ariana-header-section .btn-set-image:hover,
+.ariana-header-section .btn-remove-image:hover,
+.ariana-header-section .btn-change-image:hover {
+    background-color: #f8f9f9;
+}

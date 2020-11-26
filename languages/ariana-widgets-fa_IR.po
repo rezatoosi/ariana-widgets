@@ -4,15 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ariana widgets 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ariana-widgets\n"
-"POT-Creation-Date: 2019-10-06 23:18+0330\n"
-"PO-Revision-Date: 2019-10-06 23:22+0330\n"
+"POT-Creation-Date: 2020-11-26T15:20:12+00:00\n"
+"PO-Revision-Date: 2020-11-26 19:00+0330\n"
 "Last-Translator: \n"
 "Language-Team: Ariana Digital Agency\n"
 "Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.2\n"
+"X-Generator: Poedit 2.3\n"
 "X-Domain: ariana-widgets\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
@@ -32,7 +32,7 @@ msgstr "فناوری اطلاعات آریانا"
 msgid "http://keihanserver.com/"
 msgstr "http://keihanserver.com"
 
-#: ariana-widgets.php:58
+#: ariana-widgets.php:68
 msgid ""
 "\"Ariana Widgets\" Plugin is useless if you don't use one of the ariana "
 "themes."
@@ -40,43 +40,100 @@ msgstr ""
 "اگر یکی از پوسته های آریانا را استفاده نمی‌کنید، افزونه \"ابزارها - آریانا\" "
 "برای شما بدون استفاده است. پیشنهاد می‌کنم آنرا غیر فعال کنید."
 
-#: header-image/ariana-header-image-admin.php:13
+#: header-image/ariana-header-image-admin.php:14
 #: header-image/ariana-header-image.php:12
 #: header-image/ariana-header-image.php:47
 #: header-image/class-ariana-header-image.php:32
 msgid "Header Image"
 msgstr "تصویر هدر"
 
-#. translators:  select header image metabox in admin
-#: header-image/ariana-header-image-admin.php:16
-msgid "Upload your header image"
-msgstr "تصویر مورد نظر برای هدر را بارگزاری کنید"
+#. translators:  Header image metabox in admin
+#: header-image/ariana-header-image-admin.php:17
+msgid "Header background image"
+msgstr "تصویر پس زمینه هدر"
 
-#: header-image/ariana-header-image-admin.php:21
+#. translators:  Header section metabox in Admin - Image
+#: header-image/ariana-header-image-admin.php:22
+#: header-section/ariana-header-section-admin.php:74
+#: header-section/ariana-header-section-admin.php:75
+msgid "Set Image"
+msgstr "انتخاب تصویر"
+
+#: header-image/ariana-header-image-admin.php:23
 msgid "Set Header Image"
 msgstr "انتخاب تصویر هدر"
 
-#: header-image/ariana-header-image-admin.php:29
-#: widgets/ariana-widget-feature.php:209
+#: header-image/ariana-header-image-admin.php:32
+#: header-section/ariana-header-section-admin.php:84
+#: header-section/ariana-header-section-admin.php:115
+#: tax-thumb/class-ariana-tax-thumb.php:44
+#: tax-thumb/class-ariana-tax-thumb.php:80 widgets/ariana-widget-box.php:230
+#: widgets/ariana-widget-feature.php:212
 msgid "Remove Image"
 msgstr "حذف تصویر"
 
-#: header-image/ariana-header-image-admin.php:29
+#: header-image/ariana-header-image-admin.php:32
+#: header-section/ariana-header-section-admin.php:84
+#: header-section/ariana-header-section-admin.php:115
 msgid "Remove"
 msgstr "حذف"
 
-#: header-image/ariana-header-image-admin.php:30
+#: header-image/ariana-header-image-admin.php:33
+#: header-section/ariana-header-section-admin.php:85
+#: header-section/ariana-header-section-admin.php:116
 msgid "Edit Image"
 msgstr "ویرایش تصویر"
 
-#: header-image/ariana-header-image-admin.php:30
+#: header-image/ariana-header-image-admin.php:33
+#: header-section/ariana-header-section-admin.php:85
+#: header-section/ariana-header-section-admin.php:116
 msgid "Edit"
 msgstr "ویرایش"
 
-#. translators:  this is header image in services admin page
-#: header-image/ariana-header-image.php:50
-msgid "Upload your header image for services single page"
-msgstr ""
+#. translators:  Header section metabox in Admin - is active
+#: header-section/ariana-header-section-admin.php:27
+msgid "Use header section"
+msgstr "استفاده از بخش هدر"
+
+#. translators:  Header section metabox in Admin - title
+#: header-section/ariana-header-section-admin.php:34
+msgid "Title"
+msgstr "عنوان"
+
+#. translators:  Header section metabox in Admin - subtitle
+#: header-section/ariana-header-section-admin.php:42
+msgid "Subtitle"
+msgstr "عنوان فرعی"
+
+#. translators:  Header section metabox in Admin - Descriptions
+#: header-section/ariana-header-section-admin.php:50
+msgid "Descriptions"
+msgstr "توضیحات"
+
+#. translators:  Header section metabox in Admin - Container Class
+#: header-section/ariana-header-section-admin.php:58
+msgid "Container Class"
+msgstr "کلاس المنت اصلی"
+
+#. translators:  Header section metabox in Admin - Image
+#: header-section/ariana-header-section-admin.php:69
+msgid "Header section image"
+msgstr "تصویر هدر"
+
+#. translators:  Header section metabox in Admin - background image
+#: header-section/ariana-header-section-admin.php:100
+msgid "Header section background image"
+msgstr "تصویر پس زمینه هدر"
+
+#. translators:  Header section metabox in Admin - background image
+#: header-section/ariana-header-section-admin.php:105
+#: header-section/ariana-header-section-admin.php:106
+msgid "Set Background Image"
+msgstr "انتخاب تصویر پس زمینه"
+
+#: header-section/class-ariana-header-section.php:36
+msgid "Header Section"
+msgstr "بخش هدر"
 
 #: posttypes/ariana-posttype-projects.php:11
 msgid "Projects"
@@ -123,190 +180,190 @@ msgstr "پروژه ای در زباله‌دان نیست"
 msgid "All Projects"
 msgstr "تمام پروژه ها"
 
-#: posttypes/ariana-posttype-projects.php:34
+#: posttypes/ariana-posttype-projects.php:35
 msgid "dashicons-portfolio"
 msgstr "dashicons-portfolio"
 
-#: posttypes/ariana-posttype-projects.php:41
+#: posttypes/ariana-posttype-projects.php:42
 msgid "Portfolios"
 msgstr "پوشه‌های نمونه کار"
 
-#: posttypes/ariana-posttype-projects.php:42
+#: posttypes/ariana-posttype-projects.php:43
 msgid "Portfolio"
 msgstr "پوشه نمونه کار"
 
-#: posttypes/ariana-posttype-projects.php:43
+#: posttypes/ariana-posttype-projects.php:44
 msgid "Search Portfolios"
 msgstr "جستجوی پوشه‌های نمونه کار"
 
-#: posttypes/ariana-posttype-projects.php:44
+#: posttypes/ariana-posttype-projects.php:45
 msgid "Popular Portfolios"
 msgstr "پوشه نمونه کارهای پرمصرف"
 
-#: posttypes/ariana-posttype-projects.php:45
+#: posttypes/ariana-posttype-projects.php:46
 msgid "All Portfolios"
 msgstr "همه پوشه نمونه کارها"
 
-#: posttypes/ariana-posttype-projects.php:48
+#: posttypes/ariana-posttype-projects.php:49
 msgid "Edit Portfolio"
 msgstr "ویرایش پوشه نمونه کار"
 
-#: posttypes/ariana-posttype-projects.php:49
+#: posttypes/ariana-posttype-projects.php:50
 msgid "Update Portfolio"
 msgstr "بروزرسانی پوشه نمونه کار"
 
-#: posttypes/ariana-posttype-projects.php:50
+#: posttypes/ariana-posttype-projects.php:51
 msgid "Add New Portfolio"
 msgstr "افزودن پوشه نمونه کار جدید"
 
-#: posttypes/ariana-posttype-projects.php:51
+#: posttypes/ariana-posttype-projects.php:52
 msgid "New Portfolio Name"
 msgstr "نام پوشه نمونه کار جدید"
 
-#: posttypes/ariana-posttype-projects.php:52
+#: posttypes/ariana-posttype-projects.php:53
 msgid "Separate portfolios with commas"
 msgstr "نام های پوشه نمونه کار را با ویرگول انگلیسی (,) جدا کنید"
 
-#: posttypes/ariana-posttype-projects.php:53
+#: posttypes/ariana-posttype-projects.php:54
 msgid "Add or remove portfolio"
 msgstr "افزودن یا حذف پوشه نمونه کار"
 
-#: posttypes/ariana-posttype-projects.php:54
+#: posttypes/ariana-posttype-projects.php:55
 msgid "Choose from the most used portfolios"
 msgstr "از میان پوشه نمونه کارهای پرمصرف انتخاب کنید"
 
-#: posttypes/ariana-posttype-projects.php:55
+#: posttypes/ariana-posttype-projects.php:56
 msgid "No portfolios found."
 msgstr "پوشه نمونه کاری یافت نشد."
 
-#: posttypes/ariana-posttype-projects.php:66
+#: posttypes/ariana-posttype-projects.php:68
 msgid "Project Type Tags"
 msgstr "برچسب‌های نوع پروژه"
 
-#: posttypes/ariana-posttype-projects.php:67
+#: posttypes/ariana-posttype-projects.php:69
 msgid "Project Type Tag"
 msgstr "برچسب نوع پروژه"
 
-#: posttypes/ariana-posttype-projects.php:68
+#: posttypes/ariana-posttype-projects.php:70
 msgid "Search Type Tags"
 msgstr "جستجوی برچسب‌های نوع"
 
-#: posttypes/ariana-posttype-projects.php:69
+#: posttypes/ariana-posttype-projects.php:71
 msgid "Popular Type Tags"
 msgstr "برچسب‌های نوع پرمصرف"
 
-#: posttypes/ariana-posttype-projects.php:70
+#: posttypes/ariana-posttype-projects.php:72
 msgid "All Type Tags"
 msgstr "همه برچسب‌های نوع"
 
-#: posttypes/ariana-posttype-projects.php:73
+#: posttypes/ariana-posttype-projects.php:75
 msgid "Edit Type Tag"
 msgstr "ویرایش برچسب نوع"
 
-#: posttypes/ariana-posttype-projects.php:74
+#: posttypes/ariana-posttype-projects.php:76
 msgid "Update Type Tag"
 msgstr "بروزرسانی برچسب نوع"
 
-#: posttypes/ariana-posttype-projects.php:75
+#: posttypes/ariana-posttype-projects.php:77
 msgid "Add New Type Tag"
 msgstr "اضافه کردن برچسب نوع جدید"
 
-#: posttypes/ariana-posttype-projects.php:76
+#: posttypes/ariana-posttype-projects.php:78
 msgid "New type tag Name"
 msgstr "نام برچسب نوع جدید"
 
-#: posttypes/ariana-posttype-projects.php:77
+#: posttypes/ariana-posttype-projects.php:79
 msgid "Separate type tags with commas"
 msgstr "برچسب نوع ها را با ویرگول انگلیسی (,) جدا کنید"
 
-#: posttypes/ariana-posttype-projects.php:78
+#: posttypes/ariana-posttype-projects.php:80
 msgid "Add or remove type tags"
 msgstr "افزودن یا حذف برچسب‌های نوع"
 
-#: posttypes/ariana-posttype-projects.php:79
+#: posttypes/ariana-posttype-projects.php:81
 msgid "Choose from the most used type tags"
 msgstr "انتخاب از میان پر مصرف ها"
 
-#: posttypes/ariana-posttype-projects.php:80
+#: posttypes/ariana-posttype-projects.php:82
 msgid "No type tags found."
 msgstr "هیچ برچسب نوعی پیدا نشد."
 
-#: posttypes/ariana-posttype-projects.php:91
+#: posttypes/ariana-posttype-projects.php:94
 msgid "Technologies"
 msgstr "فناوری ها"
 
-#: posttypes/ariana-posttype-projects.php:92
+#: posttypes/ariana-posttype-projects.php:95
 msgid "Technology"
 msgstr "فناوری"
 
-#: posttypes/ariana-posttype-projects.php:93
+#: posttypes/ariana-posttype-projects.php:96
 msgid "Search Technologies"
 msgstr "جستجوی فناوری‌ها"
 
-#: posttypes/ariana-posttype-projects.php:94
+#: posttypes/ariana-posttype-projects.php:97
 msgid "Popular Technologies"
 msgstr "فناوری‌های پرمصرف"
 
-#: posttypes/ariana-posttype-projects.php:95
+#: posttypes/ariana-posttype-projects.php:98
 msgid "All Technologies"
 msgstr "همه فناوری‌ها"
 
-#: posttypes/ariana-posttype-projects.php:98
+#: posttypes/ariana-posttype-projects.php:101
 msgid "Edit Technology"
 msgstr "ویرایش فناوری‌"
 
-#: posttypes/ariana-posttype-projects.php:99
+#: posttypes/ariana-posttype-projects.php:102
 msgid "Update Technology"
 msgstr "بروزرسانی فناوری"
 
-#: posttypes/ariana-posttype-projects.php:100
+#: posttypes/ariana-posttype-projects.php:103
 msgid "Add New Technology"
 msgstr "افزودن فناوری‌ جدید"
 
-#: posttypes/ariana-posttype-projects.php:101
+#: posttypes/ariana-posttype-projects.php:104
 msgid "New Technology Name"
 msgstr "نام فناوری جدید"
 
-#: posttypes/ariana-posttype-projects.php:102
+#: posttypes/ariana-posttype-projects.php:105
 msgid "Separate technologies with commas"
 msgstr "نام فناوری‌ها را با ویرگول انگلیسی (,) جدا کنید"
 
-#: posttypes/ariana-posttype-projects.php:103
+#: posttypes/ariana-posttype-projects.php:106
 msgid "Add or remove technologies"
 msgstr "افزودن یا حذف فناوری‌ها"
 
-#: posttypes/ariana-posttype-projects.php:104
+#: posttypes/ariana-posttype-projects.php:107
 msgid "Choose from the most used technologies"
 msgstr "از میان پوشه فناوری‌های پرمصرف انتخاب کنید"
 
-#: posttypes/ariana-posttype-projects.php:105
+#: posttypes/ariana-posttype-projects.php:108
 msgid "No technologies found."
 msgstr "هیچ فناوری‌ پیدا نشد."
 
-#: posttypes/ariana-posttype-projects.php:120
+#: posttypes/ariana-posttype-projects.php:124
 msgid "Project Data"
 msgstr "اطلاعات پروژه"
 
-#: posttypes/ariana-posttype-projects.php:140
+#: posttypes/ariana-posttype-projects.php:144
 msgid "Client"
 msgstr "سفارش دهنده"
 
-#: posttypes/ariana-posttype-projects.php:145
+#: posttypes/ariana-posttype-projects.php:149
 msgid "Launch URL"
 msgstr "آدرس پروژه"
 
-#: posttypes/ariana-posttype-projects.php:150
+#: posttypes/ariana-posttype-projects.php:154
 msgid "Publish Date"
 msgstr "تاریخ انتشار"
 
-#: posttypes/ariana-posttype-projects.php:155
-#: posttypes/ariana-posttype-services.php:55
+#: posttypes/ariana-posttype-projects.php:159
+#: posttypes/ariana-posttype-services.php:100
 msgid "Description"
 msgstr "توضیحات"
 
 #. translators: text in front of Discription field label in admin
-#: posttypes/ariana-posttype-projects.php:155
-#: posttypes/ariana-posttype-services.php:55
+#: posttypes/ariana-posttype-projects.php:159
+#: posttypes/ariana-posttype-services.php:100
 msgid "Single Page sub title"
 msgstr "زیر عنوان در صفحه نمایش پروژه تکی"
 
@@ -318,29 +375,118 @@ msgstr "خدمات"
 msgid "Service"
 msgstr "خدمت"
 
+#: posttypes/ariana-posttype-services.php:10
+#: posttypes/ariana-posttype-services.php:11
+msgid "Add New Service"
+msgstr "افزودن خدمت جدید"
+
+#: posttypes/ariana-posttype-services.php:12
+msgid "Edit Service"
+msgstr "ویرایش خدمت"
+
+#: posttypes/ariana-posttype-services.php:13
+msgid "New Service"
+msgstr "خدمت جدید"
+
+#: posttypes/ariana-posttype-services.php:14
+msgid "View Service"
+msgstr "نمایش سرویس"
+
 #: posttypes/ariana-posttype-services.php:15
+msgid "View Services"
+msgstr "نمایش خدمات"
+
+#: posttypes/ariana-posttype-services.php:16
+msgid "Search Services"
+msgstr "جستجوی خدمات"
+
+#: posttypes/ariana-posttype-services.php:17
+msgid "No Service(s) Found"
+msgstr "خدمتی یافت نشد"
+
+#: posttypes/ariana-posttype-services.php:18
+msgid "No Service(s) found in trash"
+msgstr "خدمتی در زباله‌دان نیست"
+
+#: posttypes/ariana-posttype-services.php:20
+msgid "All Services"
+msgstr "همه خدمات"
+
+#: posttypes/ariana-posttype-services.php:31
 msgid "dashicons-awards"
 msgstr "dashicons-awards"
 
-#: posttypes/ariana-posttype-services.php:25
+#: posttypes/ariana-posttype-services.php:39
+msgid "Services Tags"
+msgstr "برچسب های خدمات"
+
+#: posttypes/ariana-posttype-services.php:40
+msgid "Service Tag"
+msgstr "برچسب خدمت"
+
+#: posttypes/ariana-posttype-services.php:41
+msgid "Search Tags"
+msgstr "جستجوی برچسب‌ها"
+
+#: posttypes/ariana-posttype-services.php:42
+msgid "Popular Tags"
+msgstr "برچسب‌های پرمصرف"
+
+#: posttypes/ariana-posttype-services.php:43
+msgid "All Tags"
+msgstr "همه برچسب‌ها"
+
+#: posttypes/ariana-posttype-services.php:46
+msgid "Edit Tag"
+msgstr "ویرایش برچسب"
+
+#: posttypes/ariana-posttype-services.php:47
+msgid "Update Tag"
+msgstr "بروزرسانی برچسب"
+
+#: posttypes/ariana-posttype-services.php:48
+msgid "Add New Tag"
+msgstr "اضافه کردن برچسب جدید"
+
+#: posttypes/ariana-posttype-services.php:49
+msgid "New tag Name"
+msgstr "نام برچسب جدید"
+
+#: posttypes/ariana-posttype-services.php:50
+msgid "Separate tags with commas"
+msgstr "برچسب ها را با ویرگول انگلیسی (,) جدا کنید"
+
+#: posttypes/ariana-posttype-services.php:51
+msgid "Add or remove tags"
+msgstr "افزودن یا حذف برچسب‌ها"
+
+#: posttypes/ariana-posttype-services.php:52
+msgid "Choose from the most used tags"
+msgstr "انتخاب از میان پر مصرف ها"
+
+#: posttypes/ariana-posttype-services.php:53
+msgid "No tag found."
+msgstr "هیچ برچسب پیدا نشد."
+
+#: posttypes/ariana-posttype-services.php:70
 msgid "Services Data"
 msgstr "اطلاعات خدمات"
 
-#: posttypes/ariana-posttype-services.php:45
+#: posttypes/ariana-posttype-services.php:90
 msgid "Second title"
 msgstr "عنوان دوم"
 
 #. translators: text in front of second title field label in admin
-#: posttypes/ariana-posttype-services.php:45
+#: posttypes/ariana-posttype-services.php:90
 msgid "Single Page second title"
 msgstr "عنوان دوم در صفحه نمایش تکی"
 
-#: posttypes/ariana-posttype-services.php:50
+#: posttypes/ariana-posttype-services.php:95
 msgid "Homepage Subtitle"
 msgstr "زیر‌عنوان در خانه"
 
 #. translators: text in front of Homepage subtitle field label in admin
-#: posttypes/ariana-posttype-services.php:50
+#: posttypes/ariana-posttype-services.php:95
 msgid "Home Page subtitle"
 msgstr "زیر عنوان در خانه"
 
@@ -364,6 +510,17 @@ msgstr "سایر اطلاعات"
 msgid "This URL isn't valid"
 msgstr "این آدرس معتبر نیست"
 
+#: tax-thumb/class-ariana-tax-thumb.php:39
+#: tax-thumb/class-ariana-tax-thumb.php:68 widgets/ariana-widget-box.php:219
+#: widgets/ariana-widget-feature.php:201
+msgid "Image"
+msgstr "تصویر"
+
+#: tax-thumb/class-ariana-tax-thumb.php:43
+#: tax-thumb/class-ariana-tax-thumb.php:79
+msgid "Add Image"
+msgstr "افزودن تصویر"
+
 #: widgets/ariana-widget-archive.php:39
 msgid "Select Year"
 msgstr "سال را انتخاب کنید"
@@ -384,6 +541,73 @@ msgstr "هفته را انتخاب کنید"
 msgid "Select Post"
 msgstr "پست را انتخاب کنید"
 
+#: widgets/ariana-widget-box.php:21
+msgid "Ariana - Box"
+msgstr "[آریانا] - باکس"
+
+#: widgets/ariana-widget-box.php:22
+msgid "Add a box in predefined style."
+msgstr "افزودن باکس با شمایل از پیش تعیین شده."
+
+#. translators: Title of menu
+#: widgets/ariana-widget-box.php:209 widgets/ariana-widget-category.php:111
+#: widgets/ariana-widget-feature.php:191 widgets/ariana-widget-nav-menu.php:108
+#: widgets/ariana-widget-recent-post.php:99 widgets/ariana-widget-text.php:84
+msgid "Title:"
+msgstr "عنوان:"
+
+#: widgets/ariana-widget-box.php:214 widgets/ariana-widget-feature.php:196
+msgid "Text:"
+msgstr "متن:"
+
+#: widgets/ariana-widget-box.php:229 widgets/ariana-widget-feature.php:211
+msgid "Choose Image"
+msgstr "انتخاب تصویر"
+
+#: widgets/ariana-widget-box.php:234 widgets/ariana-widget-feature.php:216
+msgid "Image:"
+msgstr "تصویر:"
+
+#: widgets/ariana-widget-box.php:238 widgets/ariana-widget-feature.php:220
+msgid "Upload Image"
+msgstr "بارگزاری تصویر"
+
+#: widgets/ariana-widget-box.php:242 widgets/ariana-widget-feature.php:224
+msgid "Icon:"
+msgstr "آیکون:"
+
+#: widgets/ariana-widget-box.php:244 widgets/ariana-widget-feature.php:226
+msgid "All Font Awesome Icons"
+msgstr "همه آیکون‌های فوت‌آسوم (FontAwesome)"
+
+#: widgets/ariana-widget-box.php:253 widgets/ariana-widget-feature.php:235
+msgid "Color:"
+msgstr "رنگ:"
+
+#: widgets/ariana-widget-box.php:258
+msgid "Button Text:"
+msgstr "متن کلید:"
+
+#: widgets/ariana-widget-box.php:263
+msgid "Button Link:"
+msgstr "پیوند کلید:"
+
+#: widgets/ariana-widget-box.php:268
+msgid "Button CSS Class:"
+msgstr "کلاس کلید: (CSS)"
+
+#: widgets/ariana-widget-box.php:273 widgets/ariana-widget-feature.php:240
+msgid "Container CSS Class:"
+msgstr "کلاس المنت اصلی:"
+
+#: widgets/ariana-widget-box.php:278 widgets/ariana-widget-feature.php:245
+msgid "Icon Container CSS Class:"
+msgstr "کلاس المنت آیکون:"
+
+#: widgets/ariana-widget-box.php:283 widgets/ariana-widget-feature.php:250
+msgid "Content Container CSS Class:"
+msgstr "کلاس المنت محتوا:"
+
 #: widgets/ariana-widget-category.php:13
 msgid "A list or dropdown of categories."
 msgstr "یک لیست یا لیست بازشو از دسته بندی‌ها"
@@ -399,13 +623,6 @@ msgstr "دسته بندی‌ها"
 #: widgets/ariana-widget-category.php:52
 msgid "Select Category"
 msgstr "انتخاب دسته"
-
-#. translators: Title of menu
-#: widgets/ariana-widget-category.php:111 widgets/ariana-widget-feature.php:188
-#: widgets/ariana-widget-nav-menu.php:108
-#: widgets/ariana-widget-recent-post.php:99 widgets/ariana-widget-text.php:84
-msgid "Title:"
-msgstr "عنوان:"
 
 #: widgets/ariana-widget-category.php:114
 #: widgets/ariana-widget-nav-menu.php:112
@@ -425,57 +642,13 @@ msgstr "نمایش تعداد پست‌ها"
 msgid "Show hierarchy"
 msgstr "نمایش زیر مجموعه‌ها"
 
-#: widgets/ariana-widget-feature.php:20
+#: widgets/ariana-widget-feature.php:22
 msgid "Ariana - Feature"
 msgstr "[آریانا] - ویژگی"
 
-#: widgets/ariana-widget-feature.php:21
+#: widgets/ariana-widget-feature.php:23
 msgid "Add this widget in \"Front page - Features\"."
 msgstr "این ابزارک را می‌توانید به \"صفحه اصلی - ویژگی‌ها\" اضافه کنید."
-
-#: widgets/ariana-widget-feature.php:193
-msgid "Text:"
-msgstr "متن:"
-
-#: widgets/ariana-widget-feature.php:198
-msgid "Image"
-msgstr "تصویر"
-
-#: widgets/ariana-widget-feature.php:208
-msgid "Choose Image"
-msgstr "انتخاب تصویر"
-
-#: widgets/ariana-widget-feature.php:213
-msgid "Image:"
-msgstr "تصویر:"
-
-#: widgets/ariana-widget-feature.php:217
-msgid "Upload Image"
-msgstr "بارگزاری تصویر"
-
-#: widgets/ariana-widget-feature.php:221
-msgid "Icon:"
-msgstr "آیکون:"
-
-#: widgets/ariana-widget-feature.php:223
-msgid "All Font Awesome Icons"
-msgstr "همه آیکون‌های فوت‌آسوم (FontAwesome)"
-
-#: widgets/ariana-widget-feature.php:232
-msgid "Color:"
-msgstr "رنگ:"
-
-#: widgets/ariana-widget-feature.php:237
-msgid "Container CSS Class:"
-msgstr "کلاس المنت اصلی:"
-
-#: widgets/ariana-widget-feature.php:242
-msgid "Icon Container CSS Class:"
-msgstr "کلاس المنت آیکون:"
-
-#: widgets/ariana-widget-feature.php:247
-msgid "Content Container CSS Class:"
-msgstr "کلاس المنت محتوا:"
 
 #: widgets/ariana-widget-nav-menu.php:14
 msgid "Add a nav menu to your sidebar."
@@ -543,3 +716,6 @@ msgstr "[آریانا] - متن"
 #: widgets/ariana-widget-text.php:88
 msgid "Content:"
 msgstr "محتوا:"
+
+#~ msgid "Upload your header image"
+#~ msgstr "تصویر مورد نظر برای هدر را بارگزاری کنید"

@@ -1,4 +1,24 @@
-#header-image-container img {
+.ariana-header-image .image-preview img {
   width: 100%;
   height: auto;
+}
+.ariana-header-image .btn-set-image,
+.ariana-header-image .btn-remove-image,
+.ariana-header-image .btn-change-image {
+  display: inline-block;
+  padding: 8px 10px;
+  background-color: #edeff0;
+  border: 1px dashed #a2aab2;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  line-height: 20px;
+}
+.ariana-header-image .btn-set-image:hover,
+.ariana-header-image .btn-remove-image:hover,
+.ariana-header-image .btn-change-image:hover {
+    background-color: #f8f9f9;
+}
+.edit-post-sidebar .ariana-header-image .btn-set-image {
+  display: block;
 }

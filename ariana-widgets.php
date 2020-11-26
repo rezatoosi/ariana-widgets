@@ -42,13 +42,19 @@ if ( 'Ariana Digital Agency' == $current_theme->get( 'Author' ) || ( $current_pa
 	require_once plugin_dir_path( __FILE__ ) . 'posttypes/ariana-posttype-services.php';
 	require_once plugin_dir_path( __FILE__ ) . 'posttypes/ariana-posttype-projects.php';
 
-	// require_once plugin_dir_path( __FILE__ ) . 'header-image/ariana-header-image.php';
 	require_once plugin_dir_path( __FILE__ ) . 'header-image/class-ariana-header-image.php';
 	function run_ariana_header_image() {
 	    $header_image = new Ariana_Header_Image();
 	    $header_image->run();
 	}
 	run_ariana_header_image();
+
+	require_once plugin_dir_path( __FILE__ ) . 'header-section/class-ariana-header-section.php';
+	function run_ariana_header_section() {
+	    $header_section = new Ariana_Header_Section();
+	    $header_section->run();
+	}
+	run_ariana_header_section();
 
 	// tax-thumb
 	require_once plugin_dir_path( __FILE__ ) . 'tax-thumb/class-ariana-tax-thumb.php';

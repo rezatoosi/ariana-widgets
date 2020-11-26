@@ -1,4 +1,4 @@
-var ariana_header_image_media_upload = {
+var ariana_header_section_media_upload = {
 
   createMediaUploader: function(selector) {
     'use strict';
@@ -145,7 +145,7 @@ var ariana_header_image_media_upload = {
         evt.preventDefault();
 
         // Display the media uploader
-        ariana_header_image_media_upload.createMediaUploader(selector);
+        ariana_header_section_media_upload.createMediaUploader(selector);
 
     });
 
@@ -155,7 +155,7 @@ var ariana_header_image_media_upload = {
         evt.preventDefault();
 
         // Display the media uploader
-        ariana_header_image_media_upload.createMediaUploader(selector);
+        ariana_header_section_media_upload.createMediaUploader(selector);
 
     });
 
@@ -165,12 +165,13 @@ var ariana_header_image_media_upload = {
         evt.preventDefault();
 
         // Remove the image, toggle the anchors
-        ariana_header_image_media_upload.resetUploadForm(selector);
+        ariana_header_section_media_upload.resetUploadForm(selector);
 
     });
 
-    ariana_header_image_media_upload.renderFeaturedImage(selector);
+    ariana_header_section_media_upload.renderFeaturedImage(selector);
   }
 }
 
-ariana_header_image_media_upload.runUploader('.ariana-header-image');
+ariana_header_section_media_upload.runUploader('.ariana-header-section-image');
+ariana_header_section_media_upload.runUploader('.ariana-header-section-bg-image');
