@@ -5,6 +5,7 @@ $db_perfix = 'post_header_section_';
 $fields = get_post_custom( $post->ID );
 
 $is_active = isset( $fields[ $db_perfix . 'is_active' ] ) ? esc_attr( $fields[ $db_perfix . 'is_active' ][0] ) : '';
+$breadcrumb = isset( $fields[ $db_perfix . 'breadcrumb' ] ) ? esc_attr( $fields[ $db_perfix . 'breadcrumb' ][0] ) : '';
 $title = isset( $fields[ $db_perfix . 'title' ] ) ? esc_attr( $fields[ $db_perfix . 'title' ][0] ) : '';
 $subtitle = isset( $fields[ $db_perfix . 'subtitle' ] ) ? esc_attr( $fields[ $db_perfix . 'subtitle' ][0] ) : '';
 $desc = isset( $fields[ $db_perfix . 'desc' ] ) ? esc_attr( $fields[ $db_perfix . 'desc' ][0] ) : '';
@@ -63,6 +64,14 @@ $container_class = isset( $fields[ $db_perfix . 'container_class' ] ) ? esc_attr
       <br>
     </p>
     <input type="text" name="<?php echo $req_perfix ?>container-class" id="<?php echo $req_perfix ?>container-class" value="<?php echo $container_class ?>">
+
+    <p class="post-attributes-label-wrapper">
+      <label class="post-attributes-label" for="<?php echo $req_perfix ?>is-active">
+        <?php
+        /* translators:  Header section metabox in Admin - breadcrumb */
+        _e( 'Insert breadcrumb', 'ariana-widgets' ); ?></label>
+      <input type="checkbox" name="<?php echo $req_perfix ?>breadcrumb" id="<?php echo $req_perfix ?>breadcrumb" <?php checked( $breadcrumb, 'on' ); ?>>
+    </p>
 
     <hr>
 

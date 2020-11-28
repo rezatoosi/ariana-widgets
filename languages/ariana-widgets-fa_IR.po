@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ariana widgets 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ariana-widgets\n"
-"POT-Creation-Date: 2020-11-26T15:20:12+00:00\n"
-"PO-Revision-Date: 2020-11-26 19:00+0330\n"
+"POT-Creation-Date: 2020-11-28T08:25:35+00:00\n"
+"PO-Revision-Date: 2020-11-28 11:58+0330\n"
 "Last-Translator: \n"
 "Language-Team: Ariana Digital Agency\n"
 "Language: fa_IR\n"
@@ -54,8 +54,8 @@ msgstr "تصویر پس زمینه هدر"
 
 #. translators:  Header section metabox in Admin - Image
 #: header-image/ariana-header-image-admin.php:22
-#: header-section/ariana-header-section-admin.php:74
-#: header-section/ariana-header-section-admin.php:75
+#: header-section/ariana-header-section-admin.php:87
+#: header-section/ariana-header-section-admin.php:88
 msgid "Set Image"
 msgstr "انتخاب تصویر"
 
@@ -64,8 +64,8 @@ msgid "Set Header Image"
 msgstr "انتخاب تصویر هدر"
 
 #: header-image/ariana-header-image-admin.php:32
-#: header-section/ariana-header-section-admin.php:84
-#: header-section/ariana-header-section-admin.php:115
+#: header-section/ariana-header-section-admin.php:97
+#: header-section/ariana-header-section-admin.php:128
 #: tax-thumb/class-ariana-tax-thumb.php:44
 #: tax-thumb/class-ariana-tax-thumb.php:80 widgets/ariana-widget-box.php:230
 #: widgets/ariana-widget-feature.php:212
@@ -73,61 +73,66 @@ msgid "Remove Image"
 msgstr "حذف تصویر"
 
 #: header-image/ariana-header-image-admin.php:32
-#: header-section/ariana-header-section-admin.php:84
-#: header-section/ariana-header-section-admin.php:115
+#: header-section/ariana-header-section-admin.php:97
+#: header-section/ariana-header-section-admin.php:128
 msgid "Remove"
 msgstr "حذف"
 
 #: header-image/ariana-header-image-admin.php:33
-#: header-section/ariana-header-section-admin.php:85
-#: header-section/ariana-header-section-admin.php:116
+#: header-section/ariana-header-section-admin.php:98
+#: header-section/ariana-header-section-admin.php:129
 msgid "Edit Image"
 msgstr "ویرایش تصویر"
 
 #: header-image/ariana-header-image-admin.php:33
-#: header-section/ariana-header-section-admin.php:85
-#: header-section/ariana-header-section-admin.php:116
+#: header-section/ariana-header-section-admin.php:98
+#: header-section/ariana-header-section-admin.php:129
 msgid "Edit"
 msgstr "ویرایش"
 
 #. translators:  Header section metabox in Admin - is active
-#: header-section/ariana-header-section-admin.php:27
+#: header-section/ariana-header-section-admin.php:28
 msgid "Use header section"
 msgstr "استفاده از بخش هدر"
 
 #. translators:  Header section metabox in Admin - title
-#: header-section/ariana-header-section-admin.php:34
+#: header-section/ariana-header-section-admin.php:36
 msgid "Title"
 msgstr "عنوان"
 
 #. translators:  Header section metabox in Admin - subtitle
-#: header-section/ariana-header-section-admin.php:42
+#: header-section/ariana-header-section-admin.php:45
 msgid "Subtitle"
 msgstr "عنوان فرعی"
 
 #. translators:  Header section metabox in Admin - Descriptions
-#: header-section/ariana-header-section-admin.php:50
+#: header-section/ariana-header-section-admin.php:54
 msgid "Descriptions"
 msgstr "توضیحات"
 
 #. translators:  Header section metabox in Admin - Container Class
-#: header-section/ariana-header-section-admin.php:58
+#: header-section/ariana-header-section-admin.php:63
 msgid "Container Class"
 msgstr "کلاس المنت اصلی"
 
+#. translators:  Header section metabox in Admin - breadcrumb
+#: header-section/ariana-header-section-admin.php:72
+msgid "Insert breadcrumb"
+msgstr "نمایش مسیر صفحه"
+
 #. translators:  Header section metabox in Admin - Image
-#: header-section/ariana-header-section-admin.php:69
+#: header-section/ariana-header-section-admin.php:82
 msgid "Header section image"
 msgstr "تصویر هدر"
 
 #. translators:  Header section metabox in Admin - background image
-#: header-section/ariana-header-section-admin.php:100
+#: header-section/ariana-header-section-admin.php:113
 msgid "Header section background image"
 msgstr "تصویر پس زمینه هدر"
 
 #. translators:  Header section metabox in Admin - background image
-#: header-section/ariana-header-section-admin.php:105
-#: header-section/ariana-header-section-admin.php:106
+#: header-section/ariana-header-section-admin.php:118
+#: header-section/ariana-header-section-admin.php:119
 msgid "Set Background Image"
 msgstr "انتخاب تصویر پس زمینه"
 

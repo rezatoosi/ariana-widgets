@@ -85,6 +85,7 @@ class Ariana_Header_Section {
     if( !current_user_can( 'edit_post' ) ) return;
 
     update_post_meta( $post_id, $db_perfix . 'is_active', ( isset( $_REQUEST[ $req_perfix . 'is-active' ] ) && ( $_REQUEST[ $req_perfix . 'is-active' ] ) ) ? 'on' : 'off' );
+    update_post_meta( $post_id, $db_perfix . 'breadcrumb', ( isset( $_REQUEST[ $req_perfix . 'breadcrumb' ] ) && ( $_REQUEST[ $req_perfix . 'breadcrumb' ] ) ) ? 'on' : 'off' );
 
     if ( isset( $_REQUEST[ $req_perfix . 'title' ] ) ) {
         update_post_meta( $post_id, $db_perfix . 'title', sanitize_text_field( $_REQUEST[ $req_perfix . 'title' ] ) );
