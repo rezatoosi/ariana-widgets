@@ -323,7 +323,7 @@ function ariana_projects_technologies_shortcode( $data ) {
 	} else {
     global $post;
     $terms = $terms = get_the_terms( $post->ID, 'ariana-technologies', '', ', ', '');
-    if ( ! $terms || is_wp_error( $term ) ) {
+    if ( ! $terms || is_wp_error( $terms ) ) {
       return;
     }
   }
