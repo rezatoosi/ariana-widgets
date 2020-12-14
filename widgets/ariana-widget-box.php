@@ -149,7 +149,7 @@ class Ariana_Widget_Box extends WP_Widget {
 		$output .=				$img_ico;
 		$output .=		'</div>';
 		$output .=		'<div class="' . esc_attr( apply_filters( 'ariana_widget_box_content_con_class', $instance['content_con_class'] ) ) . '">';
-		$output .=				'<h3>' . wp_kses_post( $instance['title'] ) . '</h3>';
+		$output .=				'<h2>' . wp_kses_post( $instance['title'] ) . '</h2>';
 		$output .=				'<p>';
 		$output .=						wp_kses_post( $instance['text'] );
     $output .=				'</p>';
